@@ -14,6 +14,7 @@ let bill = 0;
 let selectedTip;
 let pplNum = 0;
 
+
 function split() {
   if (errorChech()) {
     resetBtn.classList.add('active');
@@ -60,7 +61,7 @@ pplNumInput.addEventListener('change', () => {
   numOfPeople.classList.remove('error');
   pplNum = parseFloat(pplNumInput.value);
   if (pplNum <= 0) {
-    nmOfPeople.classList.add('error');
+    numOfPeople.classList.add('error');
     resetBtn.classList.remove('active');
   }
 });

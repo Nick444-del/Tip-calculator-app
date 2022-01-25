@@ -214,8 +214,50 @@ input::placeholder{
     cursor: pointer;
 }
 
+@media (min-width: 375px){
+    .container{
+        max-width: 60rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    .display{
+        width: 100%;
+    }
+}
 
-@media only screen and (max-width: 56.25em){
+@media (max-width: 375px) {
+    .logo-container{
+        margin-bottom: 3rem;
+    }
+    .container{
+        max-width: 34.5rem;
+        padding: 4rem 2rem;
+    }
+    .tip-grid{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr)
+    }
+    .display{
+        padding: 4rem 2rem 2rem 2rem;
+    }
+    .display-num{
+        font-size: 3rem;
+    }
+}
+
+/*
+@media only screen and (min-width: 768px){
+    .container{
+        max-width: 60rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    .display{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px){
     .logo-container{
         margin-bottom: 3rem;
     }
@@ -234,3 +276,4 @@ input::placeholder{
         font-size: 3rem;
     }
 }
+*/
