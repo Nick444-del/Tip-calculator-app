@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="main">
+    <div class="title">
+      <img src="./images/logo.svg" alt="">
+    </div>
+    <div class="container">
+      <div class="inner-left">
+        <div class="bill">
+          <h5><label for="bill">Bill</label></h5>
+          <input type="number" id="bill">
+        </div>
+        <h5><label for="select-tip">Select Tip %</h5>
+        <div class="select-tip">
+          <button id="btn1" onclick="btn1()" class="btn">5%</button>
+          <button id="btn2" onclick="btn2()" class="btn">10%</button>
+          <button id="btn3" onclick="btn3()" class="btn">15%</button>
+          <button id="btn4" onclick="btn4()" class="btn">25%</button>
+          <button id="btn5" onclick="btn5()" class="btn">50%</button>
+          <input type="number" placeholder="Custom" id="custom">
+        </div>
+        <div class="people">
+          <h5><label for="people">Number of People</label></h5>
+          <input type="number" id="people" placeholder="0">
+        </div>
+      </div>
+      <div class="inner-right">
+        <div class="tip">
+          <div class="tip-amount">
+            <h5>Tip Amount <span>/ person</span></h5>
+            <p id="tipPP">$0.00</p>
+          </div>
+          <div class="total-amount">
+            <h5>Total <span>/ person</span></h5>
+            <p id="totalPP">$0.00</p>
+          </div>
+        </div>
+        <button onclick="calculate()" class="reset">CALCULATE</button>
+        <button onclick="reset1()" class="reset">RESET</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

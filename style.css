@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+:root{
+    --strong-cyan: hsl(172, 67%, 45%);
+    --very-dark-cyan: hsl(183, 100%, 15%);
+    --dark-grayish-cyan: hsl(186, 14%, 43%);
+    --grayish-cyan: hsl(184, 14%, 56%);
+    --light-grayish-cyan: hsl(185, 41%, 84%);
+    --very-light-grayish-cyan: hsl(189, 41%, 97%);
+    --white: hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.main{
+    background-color: var(--light-grayish-cyan);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    padding: 100px 0;
+}
+
+.main .title{
+    margin: 15px 175px;
+    padding: 10px 15px;
+}
+
+.main .container{
+    width: 750px;
+    background-color: var(--white);
+    margin: 0 175px;
+    padding: 30px 35px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main .container .inner-left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    /* margin: 30px 20px; */
+}
+
+.main .container .inner-left h5{
+    font-family: 'Fraunces', sans-serif;
+    color: var(--very-dark-cyan);
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.main .container .inner-left .bill input{
+    background-color: var(--very-light-grayish-cyan);
+    border: none;
+    border-radius: 5px;
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 1px;
+    text-align: right;
+    width: 100%;
+    color: var(--very-dark-cyan);
+    padding: 10px 0;
+    transition: 0.3s;
+}
+
+.main .container .inner-left .select-tip{
+    display: grid;
+    grid-template-columns: 90px 90px 90px;
+    gap: 10px;
+}
+
+.main .container .inner-left .select-tip button{
+    background-color: var(--very-dark-cyan);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    padding: 10px 0;
+    transition: 0.3s;
+}
+
+.main .container .inner-left .select-tip button:hover{
+    background-color: var(--strong-cyan);
+    color: var(--very-dark-cyan);
+}
+
+.main .container .inner-left .select-tip input{
+    background-color: var(--very-light-grayish-cyan);
+    border: none;
+    border-radius: 5px;
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: var(--very-dark-cyan);
+    padding: 10px 0;
+    transition: 0.3s;
+}
+
+.main .container .inner-left .people input{
+    background-color: var(--very-light-grayish-cyan);
+    border: none;
+    border-radius: 5px;
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 1px;
+    text-align: right;
+    width: 100%;
+    color: var(--very-dark-cyan);
+    padding: 10px 0;
+    transition: 0.3s;
+    width: 100%;
+}
+
+.main .container .inner-right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--very-dark-cyan);
+    border-radius: 20px;
+    padding: 30px 35px;
+}
+
+.main .container .inner-right .tip .tip-amount{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    padding: 0 20px;
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-align: left;
+    transition: 0.3s;
+}
+
+.main .container .inner-right .tip .tip-amount h5{
+    color: var(--white);
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-align: left;
+    margin: 0;
+}
+
+.main .container .inner-right .tip .tip-amount h5 span{
+    color: var(--dark-grayish-cyan);
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-align: left;
+    margin: 0;
+}
+
+.main .container .inner-right .tip .tip-amount p{
+    color: var(--strong-cyan);
+    font-weight: 700;
+    font-size: 42px;
+    letter-spacing: 1px;
+    text-align: right;
+    margin: 0;
+}
+
+.main .container .inner-right .tip .total-amount{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    padding: 0 20px;
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-align: left;
+    transition: 0.3s;
+}
+
+.main .container .inner-right .tip .total-amount h5{
+    color: var(--white);
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-align: left;
+    margin: 0;
+}
+
+.main .container .inner-right .tip .total-amount h5 span{
+    color: var(--dark-grayish-cyan);
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-align: left;
+    margin: 0;
+}
+
+.main .container .inner-right .tip .total-amount p{
+    color: var(--strong-cyan);
+    font-weight: 700;
+    font-size: 42px;
+    letter-spacing: 1px;
+    text-align: right;
+    margin: 0;
+}
+
+.main .container .inner-right button{
+    background-color: var(--strong-cyan);
+    border: none;
+    border-radius: 5px;
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: var(--very-dark-cyan);
+    padding: 10px 0;
+    transition: 0.3s;
+    width: 100%;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .main .container{
+        flex-direction: column;
+        width: 100%;
+    }
+    .main .container .inner-left{
+        width: 100%;
+    }
+    .main .container .inner-left .select-tip{
+        width: 100%;
+        grid-template-columns: 120px 120px 120px;  
+    }
+    .main .container .inner-left .bill{
+        width: 100%;
+    }
+    .main .container .inner-left .people{
+        width: 100%;
+    }
+    .main .container .inner-right{
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
