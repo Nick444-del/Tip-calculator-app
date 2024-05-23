@@ -257,8 +257,8 @@
         width: 100%;
     }
     .main .container .inner-left .select-tip{
-        width: auto;
-        grid-template-columns: 130px 130px;  
+        width: 333px;
+        grid-template-columns: 50% 50%;  
     }
     .main .container .inner-left .bill{
         width: 100%;
